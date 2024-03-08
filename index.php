@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -23,6 +25,10 @@
 		<link rel="stylesheet" href="indexfooter.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
+
+	<?php
+		require 'menu.php';
+	?>
 
 		<!-- Banner -->
 			<section id="banner" class="wrapper">
