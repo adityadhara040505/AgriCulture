@@ -1,5 +1,15 @@
 <?php session_start(); ?>
+<?php
+    // Set the content type to HTML
+    header('Content-type: text/html; charset=UTF-8');
 
+    // Check if the file is accessed directly
+    if (strpos($_SERVER['REQUEST_URI'], '/index.php') === 0) {
+        // Redirect to the root of the site
+        header('Location: /');
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
